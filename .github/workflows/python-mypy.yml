@@ -20,4 +20,4 @@ jobs:
         python -m pip install .
     - name: Run mypy
       run: |
-        mypy hart_protocol
+        mypy proxr_protocol

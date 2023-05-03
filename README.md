@@ -6,12 +6,12 @@
 [![ver](https://img.shields.io/badge/calver-YYYY.M.MICRO-blue)](https://calver.org/)
 [![log](https://img.shields.io/badge/change-log-informational)](https://github.com/yaq-project/proxr-protocol/-/blob/main/CHANGELOG.md)
 
-A sans I/O Python implementation of the [Highway Adressable Remote Transducer Protocol](https://en.wikipedia.org/wiki/Highway_Addressable_Remote_Transducer_Protocol).
+A sans I/O Python implementation of the [ProXR Protocol](https://ncd.io/proxr-quick-start-guide/).
 
 ## Introduction
 
 This Python package contains tooling for encoding and decoding bytestrings for communication with ProXR peripherals.
-HART has been implemented using a variety of transport layers---XBee, RS485, Ethernet, etc.
+ProXR has been implemented using a variety of transport layers---XBee, UART, Ethernet, etc.
 In persuit of simplicity and reusability, this package does not contain any interface capabilities.
 Use something like [pySerial](https://pyserial.readthedocs.io) for transport.
 Read the [sans I/O manifesto](https://sans-io.readthedocs.io/) for more motivation regarding this design pattern.
