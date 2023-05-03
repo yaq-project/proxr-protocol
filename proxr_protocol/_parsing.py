@@ -1,6 +1,2 @@
-
-
-
-
 def parse(self):
     pass
