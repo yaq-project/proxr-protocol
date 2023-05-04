@@ -2,7 +2,7 @@ from . import tools
 
 
 def bank_invert(bank: int) -> bytes:
-    out =  b"\xAA"
+    out = b"\xAA"
     out += b"\x03"  # number of data bytes
     out += b"\xFE"
     out += b"\x83"
@@ -12,7 +12,7 @@ def bank_invert(bank: int) -> bytes:
 
 
 def bank_off(bank: int) -> bytes:
-    out =  b"\xAA"
+    out = b"\xAA"
     out += b"\x03"  # number of data bytes
     out += b"\xFE"
     out += b"\x81"
@@ -22,7 +22,7 @@ def bank_off(bank: int) -> bytes:
 
 
 def bank_on(bank: int) -> bytes:
-    out =  b"\xAA"
+    out = b"\xAA"
     out += b"\x03"  # number of data bytes
     out += b"\xFE"
     out += b"\x82"
@@ -32,7 +32,7 @@ def bank_on(bank: int) -> bytes:
 
 
 def bank_reverse(bank: int) -> bytes:
-    out =  b"\xAA"
+    out = b"\xAA"
     out += b"\x03"  # number of data bytes
     out += b"\xFE"
     out += b"\x84"
