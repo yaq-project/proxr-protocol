@@ -1,19 +1,19 @@
 [build-system]
-requires = ["flit_core >=2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.flit.metadata]
-module = "proxr_protocol"
-dist-name = "proxr-protocol"
+[project]
+name = "proxr-protocol"
 author = "Blaise Thompson"
-home-page = "https://github.com/yaq-project/proxr-protocol"
-description-file = "README.md"
+readme = "README.md"
+dynamic = ["version"]
+license = "MIT"
 requires-python = ">=3.7"
-requires = []
+dependencies = []
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "License :: OSI Approved :: MIT License",
     "Natural Language :: English",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
@@ -24,12 +24,15 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 
-[tool.flit.metadata.urls]
+[project.urls]
 Source = "https://github.com/yaq-project/proxr-protocol"
 Issues = "https://github.com/yaq-project/proxr-protocol/issues"
 
-[tool.flit.metadata.requires-extra]
+[project.optional-dependencies]
 dev = ["black", "pre-commit"]
+
+[tool.hatch.version]
+path = "proxr_protocol/__version__.py"
 
 [tool.black]
 line-length = 99
